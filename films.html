@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <!-- lien Favicon-->
+    <link rel="icon" href="image/Favicon.jpg">
+
+    <!-- Lien du Css-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--- LINK BOOSTRAP CDN-->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+
+    <!--- BOxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--- MATERIAL CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'"></script>
+
+
+    <title>Séries - Service de téléchargement</title>
+</head>
+
+<body>
+    <section class="container-movies">
+        <aside>
+            <div class="top">
+                <!--
+                     <div>
+                    <div class="menu menu-open" id="oppen_menu">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class=" menu menu-list" id="oppen_listmenu">
+                        <span class="material-icons">
+                            list
+                        </span>
+                    </div>
+
+                </div>
+                --->
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="image/logo-head.png" alt="logo MadaraDonwload">
+                    </a>
+                </div>
+
+
+                <div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+
+                <a href="index.html">
+                    <span class="material-icons">
+                        home
+                    </span>
+                    <h3>Acceuil</h3>
+                </a>
+                <a href="films.html" class="active">
+                    <span class="material-icons">
+                        live_tv
+                    </span>
+                    <h3>Films</h3>
+                </a>
+
+                <a href="series.html" >
+                    <span class="material-icons">
+                        ondemand_video
+                    </span>
+                    <h3>Séries</h3>
+                </a>
+                <a href="musique.html">
+                    <span class="material-icons">
+                        library_music
+                    </span>
+                    <h3>Musiques</h3>
+                </a>
+                <a href="ebook.html">
+                    <span class="material-icons">
+                        picture_as_pdf
+                    </span>
+                    <h3>Ebooks</h3>
+                </a>
+                <a href="software.html">
+                    <span class="material-icons">
+                        webhook
+                    </span>
+                    <h3>Logiciels</h3>
+                </a>
+                <a href="game-pc.html">
+                    <span class="material-icons">
+                        videogame_asset
+                    </span>
+                    <h3>Jeux PC</h3>
+                </a>
+                <a href="game-console.html">
+                    <span class="material-icons">
+                        sports_esports
+                    </span>
+                    <h3>Jeux Consoles</h3>
+                </a>
+                <a href="dossier_perso.html">
+                    <span class="material-icons">
+                        folder_shared
+                    </span>
+                    <h3>Dossier Lourd</h3>
+                </a>
+
+            </div>
+        </aside>
+        <!---------------- END OF ASIDE ----------->
+
+
+        <section class="container-films">
+
+            <div class="entete-recherche">
+                <div class="desciption">
+                    <h2>Service de Téléchargement</h2>
+                </div>
+
+                <form>
+                    <input type="text" name="torrentSearch" placeholder="Recherche..." value="" maxlength="49" required>
+                    <button type="submit">
+                        <i class='bx bx-search'></i>
+                    </button>
+                </form>
+
+                <div class="reseaux_socials">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-telegram'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+
+            <div class="new-films">
+                <div class="tags-new-films">
+                    <a href="#" class="defaut">Dernieres Séries ></a>
+                    <a href="#" class="selector">Par défaut</a>
+                    <a href="#">Animation</a>
+                    <a href="#">Comedie</a>
+                    <a href="#">Action</a>
+                    <a href="#">Drame</a>
+                    <a href="#">Aventure</a>
+                    <a href="#">Horreur</a>
+                    <a href="#" class="defaut defaut-fin">Voir plus</a>
+                </div>
+
+                <div class="films-new">
+
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/S1.jpg">
+                            <p class="film-name">LA CASA DE PAPEL</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/S2.jpg">
+                            <p class="film-name">S.W.A.T.<p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/S3.jpg">
+                            <p class="film-name">Power Ghost Book</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/S4.jpg">
+                            <p class="film-name">The Flash</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/S5.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+
+
+            <section class="new-films view-serie">
+
+                <div class="films-new">
+
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>9 saisons</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series1.jpg">
+                            <p class="film-name">SUITS</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>                        
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                       
+
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series2.jpg">
+                            <p class="film-name">You<p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series3.jpg">
+                            <p class="film-name">Control Z</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series5.jpg">
+                            <p class="film-name">The Flash</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series6.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series7.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series8.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series10.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series11.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series12.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series13.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series14.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series15.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series16.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series17.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series18.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series9.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series19.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series20.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+                    <article class="films-temp">
+                        <div class="film-info">
+                            <div class="info-head">
+                                <small>HDLight</small>
+                                <small>VF+VOSTFR</small>
+                            </div>
+
+                            <img src="image/Series21.jpg">
+                            <p class="film-name">Arrow</p>
+                        </div>
+                        <div class="buttons__play">
+                            <a><i class='bx bx-play-circle' onClick="toggleVideo();"></i></a>
+                        </div>
+                        <div class="button_poids_fichier">
+                            <h3 class="poids_fichier">50Gb</h3>
+                            <a href="#">Commander</a>
+                        </div>
+                    </article>
+
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+        <div class="popup-video  trailer ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yIcPJR4la_w"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <span class="close__popup" onClick="toggleVideo();">&times;</span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
