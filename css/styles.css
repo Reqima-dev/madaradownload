@@ -459,378 +459,13 @@ aside .movies .movies-image img {
     transition: all 400ms ease;
 }
 
-.tarifs-standard .tags-st a:hover {
-    color: var(--color-texte-white);
-    background: var(--color-texte-four);
-}
 
 
-.mont-tarif {
-    background: #5a328a;
-    border-radius: 5px;
-}
 
-.mont-tarif h1 {
-    color: white;
-    font-size: 3rem;
-}
 
-.tarif-perso {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    gap: 2rem;
-}
 
-.tarif-perso img {
-    width: 70%;
 
-}
 
-.tarifs-standard .button-perso a {
-    text-decoration: none;
-    color: var(--color-texte-four);
-    border: 2px solid var(--color-texte-four);
-    padding: 1rem;
-    border-radius: 10px;
-    transition: all 400ms ease;
-}
-
-.tarifs-standard .button-perso a:hover {
-    color: var(--color-texte-white);
-    background: var(--color-texte-four);
-}
-
-.mode_painement {
-    position: relative;
-}
-
-.mode_painement .paiement_types {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-
-.paiement_types img {
-    width: 80%;
-}
-
-.tags_plus {
-    padding: 3rem;
-    text-align: center;
-}
-
-.tags_plus .tags-st {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.tags_plus .tags-st a {
-    text-decoration: none;
-    color: var(--color-texte-four);
-    border: 2px solid var(--color-texte-four);
-    padding: 1rem;
-    border-radius: 10px;
-    transition: all 400ms ease;
-}
-
-.tags_plus .tags-st a:hover {
-    color: var(--color-texte-white);
-    background: var(--color-texte-four);
-}
-
-
-.plan-abonner {
-    background-image: url(../image/produit-page.jpg);
-    padding: 3rem 5rem;
-
-}
-
-.plan-abonner .info-plan {
-    text-align: center;
-    line-height: 2em;
-}
-
-.plan-abonner .info-plan h2 {
-    color: var(--color-texte-three);
-    font-size: 3.5em;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.plan-abonner .info-plan p {
-    font-size: 1.65em;
-    font-weight: 500;
-    text-transform: capitalize;
-    padding-top: 13px;
-
-}
-
-.plan-abonner .info-plan span {
-    font-size: 1em;
-    font-weight: 300;
-    color: red;
-}
-
-.container-plan {
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-}
-
-.container-plan .plan-simple {
-    background: #0351aa;
-    height: 135vh;
-    border-top-left-radius: 7rem;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.container-plan .plan-pro {
-    background: #701260;
-}
-
-.container-plan .plan-prem {
-    background: rgb(3, 150, 22)
-}
-
-.container-plan .plan-simple .plan-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-right: 1rem;
-}
-
-.container-plan .plan-simple .plan-info .info-one {
-    display: block;
-    background-color: white;
-    width: 11rem;
-    height: 11em;
-    border-radius: 50%;
-    aspect-ratio: 1/1;
-    position: relative;
-    padding: 1.5em 2.5rem;
-    margin: 1rem auto 1rem 1rem;
-    box-shadow: 1rem 1rem 2rem var(--color-texte-four);
-    text-align: center;
-
-
-}
-
-.plan-simple .plan-info .info-one h2 {
-    color: #0351aa;
-    font-size: 2rem;
-}
-
-.plan-pro .plan-info .info-one h2 {
-    color: var(--color-texte-three);
-    font-size: 2rem;
-}
-
-.plan-prem .plan-info .info-one h2 {
-    color: rgb(3, 150, 22);
-    font-size: 2rem;
-}
-
-.plan-simple .plan-info .info-one small {
-    font-weight: 500;
-    font-size: .9rem;
-}
-
-.plan-simple .plan-info .info-two p {
-    font-size: 1rem;
-    color: white;
-    font-weight: 600;
-}
-
-.plan-simple .plan-mode {
-    background: white;
-    text-align: center;
-    line-height: 4rem;
-    width: 24.10rem;
-    margin: -27px -7px;
-    box-shadow: .1rem 0 2rem .5px #0351aa;
-    position: absolute;
-
-}
-
-.plan-simple {
-    transition: transform .1s ease-in;
-}
-
-.plan-simple:hover {
-    -ms-transform: scale(1);
-    /* IE 9 */
-    -webkit-transform: scale(1);
-    /* Safari 3-8 */
-    transform: scale(1.05);
-}
-
-.plan-pro .plan-mode {
-    box-shadow: .1rem 0 2rem .5px #701260;
-}
-
-.plan-prem .plan-mode {
-    box-shadow: .1rem 0 2rem .5px rgb(3, 150, 22);
-}
-
-.plan-simple .plan-mode h1 {
-    text-transform: uppercase;
-    font-size: 2.4rem;
-    color: #0351aa;
-}
-
-.plan-pro .plan-mode h1 {
-    color: #701260;
-}
-
-.plan-prem .plan-mode h1 {
-    color: rgb(3, 150, 22);
-}
-
-.plan-simple .mode-conditions {
-    position: relative;
-    background: white;
-    margin-top: 5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 1rem;
-}
-
-.plan-simple .mode-conditions h4 {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #0351aa;
-    border-bottom: 2px dashed #0351aa;
-}
-
-.plan-pro .mode-conditions h4 {
-    color: #701260;
-    border-bottom: 2px dashed #701260;
-}
-
-.plan-prem .mode-conditions h4 {
-    color: rgb(3, 150, 22);
-    border-bottom: 2px dashed rgb(3, 150, 22);
-}
-
-.plan-simple .mode-conditions p {
-    color: #0351aa;
-    font-size: 1.2rem;
-}
-
-.plan-pro .mode-conditions p {
-    color: #701260;
-}
-
-.plan-prem .mode-conditions p {
-    color: rgb(3, 150, 22);
-}
-
-.plan-simple .mode-conditions p span {
-    font-weight: 700;
-}
-
-.plan-simple .mode-conditions>div {
-    line-height: 2.5rem;
-}
-
-.plan-simple .mode-boutton {
-    text-align: center;
-    margin-top: 2rem;
-
-}
-
-.plan-simple .mode-boutton a {
-    color: #0351aa;
-    text-decoration: none;
-    font-size: 1.2rem;
-    background: white;
-    padding: 1rem;
-    border-radius: 30px;
-    transition: all 400ms ease;
-}
-
-.plan-pro .mode-boutton a {
-    color: #701260;
-}
-
-.plan-prem .mode-boutton a {
-    color: rgb(3, 150, 22);
-}
-
-.plan-simple .mode-boutton a:hover {
-    color: white;
-    background: none;
-    border: 2px solid white;
-
-}
-
-
-.temoin-titre {
-    text-align: center;
-    margin: 1.4rem 0;
-}
-
-.temoin-titre h2 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 2.4rem;
-}
-
-.swiper {
-    width: 82%;
-}
-
-.swiper-wrapper {
-    margin-bottom: 3.5rem;
-}
-
-.swiper-slide {
-    background: linear-gradient(135deg, var(--color-texte-light), #0351aa);
-    padding: 1.5rem 2rem;
-    border-radius: 1rem;
-    cursor: default;
-    font-size: 0.9rem;
-
-
-}
-
-.swiper-slide p {
-    margin-bottom: 1.5rem;
-    color: #FFF;
-    font-size: .9rem;
-}
-
-.patient {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: #FFF;
-}
-
-
-
-.patient .avatar img {
-    width: 2.5rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.swiper-pagination-bullet {
-    color: var(--color-vert);
-}
-
-@media screen and (max-width :600px) {
-    .swiper-slide {
-        padding: 1.5rem;
-    }
-}
 
 
 
@@ -857,148 +492,246 @@ aside .movies .movies-image img {
     color: var(--white);
 }
 
-.contact {
+
+
+
+
+
+/*--------------- HOME 2 -----------------------*/
+
+.recent_movies_home {
+    margin-top: 7rem;
+    margin-left: 1.5rem;
     display: grid;
-    grid-template-columns: auto 40rem;
+    grid-template-columns: 25vw 48vw;
     gap: 2rem;
-    margin: 1rem 5rem;
-
+    z-index: 10000;
 }
 
-.contact form {
-    max-width: 90rem;
-    margin: 0 auto;
-    background-color: var(--color-texte-light);
-    border: var(--border);
-    padding: 2rem;
-}
-
-.contact form .box {
+.recent_movies_home .recent_movies {
     width: 100%;
-    margin: .7rem 0;
-    padding: 1.2rem 1.4rem;
-    text-transform: none;
-    font-size: 1rem;
-    border: var(--border);
+    height: 363vh;
+    background-color: white;
+    box-shadow: 0 2rem 2rem var(--color-texte-four);
 }
 
-
-.contact form .box:focus {
-    background-color: var(--color-texte-three);
-    color: var(--white);
+.recent_movies_home .recent_movies .new-movies-titlte {
+    background-color: var(--color-aside);
+    border-top-left-radius: 0;
+    border-top-right-radius: 20rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    line-height: 3em;
 }
 
-.contact form .box::placeholder {
-    color: var(--black);
-    text-transform: capitalize;
+.recent_movies_home div .recent_movies .recent_films h3 {
+    color: red;
+    padding-left: 40px;
+    padding-top: 10px;
+    border-bottom: 1px black solid;
 }
 
-.contact form textarea {
-    height: 10rem;
-    resize: none;
-}
-
-.contact form .box:focus::placeholder {
-    color: var(--white);
+.recent_movies_home div .recent_movies .recent_films .movies-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
 }
 
-.stand_livraison {
+.recent_movies_home div .recent_movies .recent_films .movies-image .cover img {
+    float: left;
+    display: block;
+    margin: 11px 0 11px 9px;
+    width: 150px;
+    height: 201px;
     text-align: center;
-    float: right;
+    transition: all 400ms ease;
 }
 
-.stand_livraison img {
-    width: 90%;
-    height: 82%;
+.recent_movies_home div .recent_movies .recent_films .movies-image .cover {
+    text-align: center;
+}
+
+.recent_movies .recent_films .movies-image .cover span {
+    color: var(--color-texte-four);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 400ms ease;
+
+}
+
+.recent_movies .recent_films .movies-image .cover span:hover {
+    color: var(--color-texte-three);
+    border: 1px solid var(--color-primary);
+}
+
+.recent_movies_home div .recent_movies .recent_films .movies-image .cover img:hover {
+    transform: translateY(-4px);
 }
 
 
-/*********** FOOTER *************/
-
-
-
-.logo-footer img {
-    height: 15em;
+.madara_info .container-left .info {
+    text-align: center;
+    max-width: 100%;
 }
 
-.footer-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 4rem;
+.madara_info .container-left .info h1 {
+    color: white;
+    font-size: 3.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px black;
+}
+
+.madara_info .container-left .info p {
+    color: white;
+    font-size: 2.3em;
+    line-height: 5px;
+}
+
+
+.madara_info .md-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     margin-top: 2rem;
 }
 
-.footer-logo {
-    max-width: 80%;
-    display: flex;
-    align-items: center;
-
-}
-
-.footer-logo p {
-    font-size: 1.3rem;
-    font-family: var(--font-family-one);
-    font-weight: 420;
-}
-
-.social-menu p {
-    font-family: var(--font-family-one);
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-
-.social-menu a {
-    display: block;
-    color: var(--color-five);
-    font-family: var(--font-family-one);
-    font-weight: 450;
-    font-size: 1rem;
-    padding-top: .5rem;
-    text-decoration: none;
-}
-
-.social-menu a:hover {
-    text-decoration: underline;
-}
-
-.social-menu .bx {
-    font-size: 1.2rem;
-    margin-right: .5rem;
-}
-
-footer {
-    padding: 1rem 4rem;
-    background: #151618;
+.madara_info .md-services .services {
     text-align: center;
 }
 
-footer p {
-    font-size: .9rem;
+.madara_info .md-services .services img {
+    width: 10rem;
+    transition: all 400ms ease;
+}
+
+.madara_info .md-services .services img:hover {
+    transform: translateY(-4px);
+}
+
+.madara_info .md-services .services p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.madara_info .special__promo {
+    margin-top: 2rem;
+    border-top: 1px solid var(--color-info-dark);
+}
+
+.madara_info .special__promo h1 {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.madara_info .special__promo .promo_corver {
+    text-align: center;
+
+}
+
+.madara_info .special__promo .promo_corver img {
+    width: 40rem;
+    transition: all 400ms ease;
+
+}
+
+.madara_info .special__promo .promo_corver img:hover {
+    box-shadow: -.5rem 0rem 2rem var(--color-texte-four);
+    width: 38rem;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.special__promo .promo_corver .bouton-promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.special__promo .promo_corver .bouton-promo .bouton-validate a {
+    text-decoration: none;
     color: white;
+    background: var(--color-texte-three);
+    padding: .7rem;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.special__promo .promo_corver .bouton-promo .bouton-validate a:hover {
+    color: var(--color-texte-three);
+    background: none;
+    border: 1px solid var(--color-texte-three);
+}
+
+.special__promo .promo_corver .bouton-promo .boutton-share a {
+    text-decoration: none;
+    color: var(--color-texte-three);
+    border: 1px solid var(--color-texte-three);
+    padding: .7rem;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.special__promo .promo_corver .bouton-promo .boutton-share a:hover {
+    color: white;
+    background: var(--color-texte-three);
 }
 
 
+.madara_info .tarifsStandars {
+    margin-top: 5rem;
+    border-top: 1px solid var(--color-texte-four);
+    text-align: center;
+}
+
+.madara_info .tarifsStandars .tarifs {
+    background: white;
+    margin: 1rem;
+    border: 15px inset var(--color-aside);
+    box-shadow: 0 0 2rem var(--color-info-dark);
+    animation: tarifs 1s alternate-reverse infinite;
+}
+
+@keyframes tarifs {
+    from {
+        transform: translateY(15px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.madara_info .tarifsStandars .tarifs h1 {
+    color: var(--yellow);
+    font-size: 3.5rem;
+    -webkit-text-stroke: 2px black;
+
+}
+
+.madara_info .tarifsStandars .tarifs p {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+}
 
 
+.madara_info .mode_painement {
+    margin-top: 3rem;
+}
 
+.madara_info .mode_painement h1 {
+    font-size: 2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.madara_info .mode_painement img {
+    width: 100%;
+}
 
 /*----------------- FILMS -----------------*/
 
@@ -1074,8 +807,445 @@ footer p {
 }
 
 
+.recent_movies_home .plan-abonner {
+    background-image: url(../image/produit-page.jpg);
+    padding: 3rem 2rem;
+    width: 81vw;
+    height: 133vh;
+    margin-left: -29px;
+    margin-top: -40px;
+}
+
+.recent_movies_home .plan-abonner .info-plan {
+    text-align: center;
+    line-height: 2em;
+}
+
+.recent_movies_home .plan-abonner .info-plan h2 {
+    color: var(--color-texte-three);
+    font-size: 3.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.recent_movies_home .plan-abonner .info-plan p {
+    font-size: 1.65em;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-top: 13px;
+
+}
+
+.recent_movies_home .plan-abonner .info-plan span {
+    font-size: 1em;
+    font-weight: 500;
+    color: red;
+}
+
+.plan-abonner .container-plan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Plan Abonnemnt ========== Plan SIMPLE*/
+
+.plan-abonner .container-plan .plan-simple {
+    background: #0351aa;
+    height: 103vh;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 0;
+
+}
+
+.plan-abonner .container-plan .plan-simple:hover .info-one {
+    transform: translateY(-12px);
+}
+
+.plan-abonner .container-plan .plan-simple:hover .plan-mode h1 {
+    transform: translateX(-20px);
+}
+
+.plan-abonner .container-plan .plan-simple .plan-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+.plan-abonner .container-plan .plan-simple .plan-info .info-one {
+    display: block;
+    background-color: white;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem auto 1rem 1rem;
+    box-shadow: 1rem 1rem 2rem var(--color-texte-four);
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+.plan-abonner .container-plan .plan-simple .plan-info .info-one h2 {
+    color: #0351aa;
+    font-size: 1.5rem;
+}
+
+.plan-abonner .plan-simple .plan-info .info-two p {
+    font-size: .9rem;
+    color: white;
+    font-weight: 600;
+}
+
+.plan-abonner .plan-simple .plan-mode {
+    background: white;
+    text-align: center;
+    line-height: 4rem;
+    width: 21rem;
+    margin: -20px -7px;
+    box-shadow: .1rem 0 2rem .5px #0351aa;
+    position: absolute;
+}
+
+.plan-abonner .plan-simple .plan-mode h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #0351aa;
+    transition: all 1s ease;
+}
+
+.plan-abonner .plan-simple .mode-conditions {
+    position: relative;
+    background: white;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.plan-abonner .plan-simple .mode-conditions h4 {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #0351aa;
+    border-bottom: 2px dashed #0351aa;
+}
+
+.plan-abonner.plan-simple .mode-conditions>div {
+    line-height: 2.2rem;
+}
+
+.plan-abonner .plan-simple .mode-conditions p {
+    color: #0351aa;
+    font-size: 1.2rem;
+}
+
+.plan-abonner .plan-simple .mode-conditions p span {
+    font-weight: 600;
+    color: #000;
+}
+
+.plan-abonner .plan-simple .mode-boutton {
+    text-align: center;
+    margin-top: 2rem;
+    transition: all 400ms ease;
+}
+
+.plan-abonner .plan-simple .mode-boutton:hover {
+    -ms-transform: scale(1);
+    /* IE 9 */
+    -webkit-transform: scale(1);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
+.plan-abonner .plan-simple .mode-boutton a {
+    color: #0351aa;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 30px;
+    transition: all 400ms ease;
+}
+
+.plan-abonner .plan-simple .mode-boutton a:hover {
+    color: white;
+    background: none;
+    border: 2px solid white;
+
+}
+
+/* Plan Abonnemnt ========== Plan Professsionel*/
+
+.plan-abonner .container-plan .plan-pro .plan-info .info-one h2 {
+    color: var(--color-texte-three);
+    font-size: 1.5rem;
+}
+
+.plan-abonner .container-plan .plan-pro {
+    background: var(--color-texte-three);
+}
+
+.plan-abonner .plan-pro .plan-mode {
+    box-shadow: .1rem 0 2rem .5px #701260;
+}
+
+.plan-abonner .plan-pro .plan-mode h1 {
+    color: #701260;
+}
+
+.plan-abonner .plan-pro .mode-conditions h4 {
+    color: #701260;
+    border-bottom: 2px dashed #701260;
+}
+
+.plan-abonner .plan-pro .mode-conditions p {
+    color: #701260;
+}
+
+.plan-abonner .plan-pro .mode-boutton a {
+    color: #701260;
+}
+
+.plan-abonner .plan-pro .mode-boutton {
+    text-align: center;
+    margin-top: 3.7rem;
+
+}
+
+/* Plan Abonnemnt ========== Plan Composée*/
+
+.plan-abonner .container-plan .plan-prem .plan-info .info-one h2 {
+    color: rgb(3, 150, 22);
+    font-size: 1.5rem;
+}
+
+.plan-abonner .container-plan .plan-prem {
+    background: rgb(3, 150, 22);
+}
+
+.plan-abonner .plan-prem .plan-mode {
+    box-shadow: .1rem 0 2rem .5px rgb(3, 150, 22);
+}
+
+.plan-abonner .plan-prem .plan-mode h1 {
+    color: rgb(3, 150, 22);
+}
+
+.plan-abonner .plan-prem .mode-conditions h4 {
+    color: rgb(3, 150, 22);
+    border-bottom: 2px dashed rgb(3, 150, 22);
+}
+
+.plan-abonner .plan-prem .mode-conditions p {
+    color: rgb(3, 150, 22);
+}
+
+.plan-abonner .plan-prem .mode-boutton a {
+    color: rgb(3, 150, 22);
+}
 
 
+
+/* Témoignages*/
+.temoignes {
+    width: 80vw;
+    margin-left: 16rem;
+    margin-top: -37px;
+}
+
+.temoin-titre {
+    text-align: center;
+    margin: 1.4rem 0;
+}
+
+.temoin-titre h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+.swiper {
+    width: 82%;
+}
+
+.swiper-wrapper {
+    margin-bottom: 3.5rem;
+}
+
+.swiper-slide {
+    background: linear-gradient(135deg, var(--color-texte-light), #0351aa);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    cursor: default;
+    font-size: 0.9rem;
+
+
+}
+
+.swiper-slide p {
+    margin-bottom: 1.5rem;
+    color: #FFF;
+    font-size: .9rem;
+}
+
+.patient {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #FFF;
+}
+
+
+
+.patient .avatar img {
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+    color: var(--color-vert);
+}
+
+@media screen and (max-width :600px) {
+    .swiper-slide {
+        padding: 1.5rem;
+    }
+}
+
+
+/* CONTACTS*/
+
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 22rem 1.5rem;
+    margin-bottom: 0;
+
+}
+
+.contact form {
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: var(--color-texte-light);
+    border: var(--border);
+    padding: 2rem;
+}
+
+.contact form .box {
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1.2rem 1.4rem;
+    text-transform: none;
+    font-size: 1rem;
+    border: var(--border);
+}
+
+
+.contact form .box:focus {
+    background-color: var(--color-texte-three);
+    color: var(--white);
+}
+
+.contact form .box::placeholder {
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.contact form textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.contact form .box:focus::placeholder {
+    color: var(--white);
+
+}
+
+.stand_livraison {
+    text-align: center;
+    float: right;
+}
+
+.stand_livraison img {
+    width: 100%;
+    height: 73%;
+}
+
+/*********** FOOTER *************/
+
+.footer-container {
+    margin-left: 15rem;
+    padding-right: 1.5rem;
+}
+
+.logo-footer img {
+    height: 10em;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-logo {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    font-family: var(--font-family-one);
+    font-weight: 420;
+    width: 430px;
+    text-align: justify;
+}
+
+.social-menu a {
+    color: var(--color-five);
+    
+}
+
+.social-menu .bx{
+    font-size: 2.2rem;
+    margin-right: .8rem;
+    color: var(--color-aside);
+    transition: all 1s ease;
+}
+.social-menu .bx:hover{
+    color: var(--color-texte-three);
+    transform: translateY(-12px);
+}
+.social-menu a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    padding: 1rem 4rem;
+    background: var(--color-texte-three);
+    text-align: center;
+    padding-left: 15rem;
+    box-shadow: 0 0 2rem var(--color-info-dark);
+}
+
+footer p {
+    font-size: .9rem;
+    color: white;
+}
 
 /*---------- SECTION NEW FILMS ---------------*/
 .container-films {
@@ -1092,7 +1262,7 @@ footer p {
     width: 81vw;
     height: 10vh;
     top: 0;
-    z-index: 10000;
+    z-index: 20000;
     text-align: center;
     margin-left: -8px;
 }
@@ -1141,11 +1311,11 @@ footer p {
     top: 11px;
 }
 
-.container-films .entete-recherche .reseaux_socials a{
+.container-films .entete-recherche .reseaux_socials a {
     color: white;
     font-size: 1.9rem;
     gap: 2rem;
-   
+
 
 }
 
@@ -1159,7 +1329,7 @@ footer p {
     box-shadow: 0 1rem 3rem black;
 }
 
-.container-films .view-serie{
+.container-films .view-serie {
     background: none;
     box-shadow: none;
     margin-top: 0;
@@ -1267,10 +1437,12 @@ footer p {
 .films-new .films-temp .button_poids_fichier {
     margin-top: 8px;
 }
-.films-new .films-temp .button_poids_fichier h3{
+
+.films-new .films-temp .button_poids_fichier h3 {
     color: red;
 }
-.films-new .films-temp .button_poids_fichier a{
+
+.films-new .films-temp .button_poids_fichier a {
     color: white;
     background: var(--color-aside);
     padding: .3rem 1rem;
@@ -1278,7 +1450,7 @@ footer p {
     transition: all 400ms ease;
 }
 
-.films-new .films-temp .button_poids_fichier a:hover{
+.films-new .films-temp .button_poids_fichier a:hover {
     border: 2px solid var(--color-aside);
     color: black;
     background: none;
@@ -1450,12 +1622,23 @@ footer p {
 
 }
 
+.container_home {
+    display: grid;
+    max-width: 1350px;
+    height: 690vh;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto;
+    background: linear-gradient(180deg, #843376, #d2cbcb, #843376);
+}
+
 
 .container-movies aside {
     height: 100vh;
     background: var(--color-aside);
     width: 248px;
     position: fixed;
+    z-index: 100000;
 }
 
 .container-movies aside .top {
@@ -1523,12 +1706,12 @@ aside .menu-list:hover{
 
 .container-movies aside .sidebar a {
     display: flex;
-    color: var(--color-info-dark);
+    color: white;
     margin-left: 1.5rem;
     gap: 1rem;
     align-items: center;
     position: relative;
-    height: 3.7rem;
+    height: 3.2rem;
     transition: all 300ms ease;
 }
 
